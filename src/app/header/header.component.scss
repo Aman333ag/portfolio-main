@@ -1,0 +1,96 @@
+// li:hover,.home:hover {
+//     background-color: rgb(51, 59, 61);
+// }
+
+a:hover {
+    color: rgb(255, 255, 255);
+}
+nav{
+    background-color:#211e27;
+}
+
+.container-fluid{
+  width: 100vw;
+
+}
+
+
+
+.container-fluid div{
+  margin-inline: auto;
+}
+
+
+li{
+  display: inline-flex;
+}
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 500;
+}
+
+.button-85 {
+  padding: 0.4em 1em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #64495c,
+    #a08499,
+    #e8c2d4,
+    #e8c2d4,
+    #a08499,
+    #64495c
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
