@@ -16,6 +16,9 @@ import { FormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { LibrariesComponent } from './libraries/libraries.component';
+import { ServicesComponent } from './services/services.component';
+
 
 @NgModule({
   declarations: [
@@ -25,9 +28,11 @@ import { MatInputModule } from '@angular/material/input';
     AboutComponent,
     SkillsComponent,
     CurriculumVitaeComponent,
-    ContactComponent
-
-  ],
+    ContactComponent,
+    LibrariesComponent,
+    ServicesComponent,
+    
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,

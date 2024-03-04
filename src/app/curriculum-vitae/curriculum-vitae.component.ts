@@ -13,20 +13,20 @@ export class CurriculumVitaeComponent implements OnInit {
   volleyBallIcon:any;
 
    experiences = [
-    {
-        title: "Freelance developer",
-        company: 'Techozeano',
-        period: "2020 - 2021 (7 months)",
-        technologies: ' C#, .NET, Angular 11, Angular Materials, AngularJS, LINQ, HTML5, CSS3',
-        missions: [
-            "Implementation of a Pages (colors, layout).",
-            "Development of a resource saving interface.",
-            "Creating customizable web pages.",
-            "Development of a web application for survey programmer.",
-            "Evolutionary and corrective maintenance of application."
-        ],
-        detailIsDisplayed: false,
-    },
+    // {
+    //     title: "Freelance developer",
+    //     company: 'Techozeano',
+    //     period: "2020 - 2021 (7 months)",
+    //     technologies: ' C#, .NET, Angular 11, Angular Materials, AngularJS, LINQ, HTML5, CSS3',
+    //     missions: [
+    //         "Implementation of a Pages (colors, layout).",
+    //         "Development of a resource saving interface.",
+    //         "Creating customizable web pages.",
+    //         "Development of a web application for survey programmer.",
+    //         "Evolutionary and corrective maintenance of application."
+    //     ],
+    //     detailIsDisplayed: false,
+    // },
     {
         title: "Software Developer",
         company: 'SAGO',

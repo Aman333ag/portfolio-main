@@ -1,0 +1,16 @@
+.row
+{
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  transition: all 0.3s ease-in-out;
+
+}
+
+.card:hover{
+  background: #ECE9EB;
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px #947f8d;
+}

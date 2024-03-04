@@ -11,9 +11,10 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     var options = {
       strings: ['Web Developer', 'Freelancer'],
-      typeSpeed: 75,
-      backSpeed: 55,
-      loop: true,
+      typeSpeed: 80,
+          loop: true,
+          backDelay: 1100,
+          backSpeed: 30
     };
 
     var typed = new Typed('.typed', options);

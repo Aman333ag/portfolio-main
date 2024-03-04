@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
   skills:any={
-    technologies:[{name:"HTML5, CSS3",percent:80,remark:'very-good'}, {name:"C#, ASP.NETCore, DotNET7",percent:70,remark:'good'},{name:"MS SQL",percent:70,remark:'good'},{name:"TypeScript, JavaScript",percent:70,remark:'good'}, {name:"Angular15, Bootstrap, AngularMaterial", percent:80,remark:'very-good'}],
-    tools:[{name:"Git",percent:90,remark:'excellent'},{name:"Visual Studio, VS Code",percent:75,remark:'good'},{name:"SQL Server Management Studio",percent:70,remark:'good'},{name:"Swagger",percent:85,remark:'excellent'},{name:"Azure & Web Services",percent:70,remark:'good'}],
-    methodologies:[{name:"Scrum",percent:70,remark:'good'},{name:"Disign Thinking",percent:70,remark:'good'},{name:"TDD",percent:90,remark:'excellent'},{name:"DevOps",percent:50,remark:'average'}]
+    technologies:[ {name:".NET Core, .NET 7",percent:70,remark:'good'}, {name:"Angular 15, AngularJS, React JS", percent:80,remark:'very-good'},{name:"C#, TypeScript, JavaScript",percent:70,remark:'good'},{name:"MSSQL",percent:70,remark:'good'},{name:"HTML5, CSS3",percent:80,remark:'very-good'}],
+    tools:[{name:"Azure & Web Services",percent:70,remark:'good'},{name:"SQL Server Management Studio",percent:70,remark:'good'},{name:"Swagger",percent:85,remark:'excellent'},{name:"Git",percent:90,remark:'excellent'},{name:"Visual Studio, VS Code",percent:75,remark:'good'}],
+    methodologies:[{name:"DevOps",percent:50,remark:'average'},{name:"Test Driven Development, Unit Testing",percent:90,remark:'excellent'},{name:"Scrum",percent:70,remark:'good'},{name:"Design Thinking",percent:70,remark:'good'}]
   };
 
 
