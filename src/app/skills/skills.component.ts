@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-skills',
@@ -6,19 +7,81 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-  skills:any={
-    technologies:[ {name:".NET Core, .NET 7",percent:70,remark:'good'}, {name:"Angular 15, AngularJS, React JS", percent:80,remark:'very-good'},{name:"C#, TypeScript, JavaScript",percent:70,remark:'good'},{name:"MSSQL",percent:70,remark:'good'},{name:"HTML5, CSS3",percent:80,remark:'very-good'}],
-    tools:[{name:"Azure & Web Services",percent:70,remark:'good'},{name:"SQL Server Management Studio",percent:70,remark:'good'},{name:"Swagger",percent:85,remark:'excellent'},{name:"Git",percent:90,remark:'excellent'},{name:"Visual Studio, VS Code",percent:75,remark:'good'}],
-    methodologies:[{name:"DevOps",percent:50,remark:'average'},{name:"Test Driven Development, Unit Testing",percent:90,remark:'excellent'},{name:"Scrum",percent:70,remark:'good'},{name:"Design Thinking",percent:70,remark:'good'}]
+  @ViewChild('scrollImages', { static: true }) scrollImages!: ElementRef;
+  @ViewChild('leftButton', { static: true }) leftButton!: ElementRef;
+  @ViewChild('rightButton', { static: true }) rightButton!: ElementRef;
+  skills: any = {
+    technologies: [
+      { name: ".NET Core, .NET 7", remark: 'good' },
+      { name: "Angular 15, AngularJS, React JS", remark: 'very-good' },
+      { name: "C#, TypeScript, JavaScript", remark: 'good' },
+      { name: "MSSQL", remark: 'good' },
+      { name: "HTML5, CSS3", remark: 'very-good' }
+    ],
+    tools: [
+      { name: "Azure & Web Services", remark: 'good' },
+      { name: "SQL Server Management Studio", remark: 'good' },
+      { name: "Swagger", remark: 'excellent' },
+      { name: "Git", remark: 'excellent' },
+      { name: "Visual Studio, VS Code", remark: 'good' }
+    ],
+    methodologies: [
+      { name: "DevOps", remark: 'average' },
+      { name: "Test Driven Development", remark: 'excellent' },
+      { name: "Unit Testing", remark: 'excellent' },
+      { name: "Scrum", remark: 'good' },
+      { name: "Design Thinking", remark: 'good' }
+    ],
+    designPatterns: [
+      { name: "MVC (Model-View-Controller)" },
+      { name: "MVVM (Model-View-ViewModel)", remark: 'excellent' },
+      { name: "Singleton", remark: 'excellent' },
+      { name: "Observer", remark: 'good' },
+      { name: "Factory", remark: 'good' }
+    ],
+    api: [
+      { name: "RESTful APIs", remark: 'average' },
+      { name: "SOAP", remark: 'excellent' },
+      { name: "OAuth", remark: 'excellent' },
+      { name: "OpenAPI/Swagger", remark: 'good' }
+    ]
   };
-
-
+  scrollLength: number = 0;
 
   ngOnInit(): void {
+    this.checkScroll();
+
+    // Add event listeners
+    this.scrollImages.nativeElement.addEventListener('scroll', () => this.checkScroll());
+    window.addEventListener('resize', () => this.checkScroll());
   }
 
+  checkScroll(): void {
+    const currentScroll = this.scrollImages.nativeElement.scrollLeft;
+
+    if (currentScroll === 0) {
+      this.leftButton.nativeElement.setAttribute('disabled', 'true');
+      this.rightButton.nativeElement.removeAttribute('disabled');
+    } else if (currentScroll === this.scrollLength) {
+      this.rightButton.nativeElement.setAttribute('disabled', 'true');
+      this.leftButton.nativeElement.removeAttribute('disabled');
+    } else {
+      this.leftButton.nativeElement.removeAttribute('disabled');
+      this.rightButton.nativeElement.removeAttribute('disabled');
+    }
+  }
+
+  leftScroll(): void {
+    this.scrollImages.nativeElement.scrollBy({
+      left: -200,
+      behavior: 'smooth'
+    });
+  }
+
+  rightScroll(): void {
+    this.scrollImages.nativeElement.scrollBy({
+      left: 200,
+      behavior: 'smooth'
+    });
+  }
 }
-
-
-
-
