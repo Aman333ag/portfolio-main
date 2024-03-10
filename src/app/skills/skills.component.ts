@@ -12,7 +12,7 @@ export class SkillsComponent implements OnInit {
   @ViewChild('rightButton', { static: true }) rightButton!: ElementRef;
   skills: any = {
     technologies: [
-      { name: ".NET Core, .NET 7", remark: 'good' },
+      { name: ".NET Core, .NET 7, LinQ", remark: 'good' },
       { name: "Angular 15, AngularJS, React JS", remark: 'very-good' },
       { name: "C#, TypeScript, JavaScript", remark: 'good' },
       { name: "MSSQL", remark: 'good' },

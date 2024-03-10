@@ -27,7 +27,7 @@
                       </div>
                       <p *ngIf="experience.detailIsDisplayed">
                           <span *ngFor="let mission of experience.missions;let index = index">
-                              <strong>{{'Mission'}} {{index+1}}: </strong>{{mission}} <br>
+                              <strong>{{'Mission'}} {{index+1}}: </strong>{{mission}} <br><br>
                           </span>
                           <strong>{{'Technologies'}}:</strong> {{experience.technologies}}
                       </p>

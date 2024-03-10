@@ -26,17 +26,23 @@
 .card{
     height: 400px;
     width: 400px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.6s ease-in-out;
 
+}
+
+
+.card:hover{
+  opacity: 0.9;
 }
 .card-body{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   font-family: 'Playfair Display', serif;
-  font-weight: 600;
+  font-weight: 500;
   font-style: italic;
+  box-sizing: border-box;
 
 }
 .card2:hover{
@@ -70,12 +76,14 @@
   position: sticky;
   left: 0;
   transform: translateY(-50%);
+  margin-right: 30px;
 }
 
 .right {
   position: sticky;
   right: 0;
   transform: translateY(-50%);
+  margin-left: 30px;
 }
 
 .scroll-images {
@@ -98,7 +106,6 @@
   min-width: 300px;
   height: 250px;
   padding: 0px 15px;
-  border: 1px solid #000000;
   overflow: hidden;
   -webkit-box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);;
   box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);;
