@@ -31,7 +31,7 @@ import { ServicesComponent } from './services/services.component';
     ContactComponent,
     LibrariesComponent,
     ServicesComponent,
-    
+
    ],
   imports: [
     BrowserModule,

@@ -13,28 +13,28 @@ export class SkillsComponent implements OnInit {
   skills: any = {
     technologies: [
       { name: ".NET Core, .NET 7, LinQ", remark: 'good' },
-      { name: "Angular 15, AngularJS, React JS", remark: 'very-good' },
+      { name: "Angular 15, React JS", remark: 'very-good' },
       { name: "C#, TypeScript, JavaScript", remark: 'good' },
       { name: "MSSQL", remark: 'good' },
       { name: "HTML5, CSS3", remark: 'very-good' }
     ],
     tools: [
       { name: "Azure & Web Services", remark: 'good' },
-      { name: "SQL Server Management Studio", remark: 'good' },
+      { name: "SSMS", remark: 'good' },
       { name: "Swagger", remark: 'excellent' },
       { name: "Git", remark: 'excellent' },
       { name: "Visual Studio, VS Code", remark: 'good' }
     ],
     methodologies: [
       { name: "DevOps", remark: 'average' },
-      { name: "Test Driven Development", remark: 'excellent' },
+      { name: "TDD", remark: 'excellent' },
       { name: "Unit Testing", remark: 'excellent' },
       { name: "Scrum", remark: 'good' },
       { name: "Design Thinking", remark: 'good' }
     ],
     designPatterns: [
-      { name: "MVC (Model-View-Controller)" },
-      { name: "MVVM (Model-View-ViewModel)", remark: 'excellent' },
+      { name: "MVC" },
+      { name: "MVVM", remark: 'excellent' },
       { name: "Singleton", remark: 'excellent' },
       { name: "Observer", remark: 'good' },
       { name: "Factory", remark: 'good' }

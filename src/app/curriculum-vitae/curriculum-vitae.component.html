@@ -25,11 +25,10 @@
                               class="btn " style="background-color: #64495c; color: white;">
                               <span *ngIf="!experience.detailIsDisplayed">+</span><span *ngIf="experience.detailIsDisplayed">-</span></button>
                       </div>
-                      <p *ngIf="experience.detailIsDisplayed">
-                          <span *ngFor="let mission of experience.missions;let index = index">
-                              <strong>{{'Mission'}} {{index+1}}: </strong>{{mission}} <br><br>
+                      <p style="font-style: italic;" *ngIf="experience.detailIsDisplayed">
+                          <span *ngFor="let mission of experience.missions;">
+                              <strong><u>{{mission.heading}}</u> : </strong>{{mission.name}} <br><br>
                           </span>
-                          <strong>{{'Technologies'}}:</strong> {{experience.technologies}}
                       </p>
                   </li>
 
