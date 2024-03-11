@@ -43,49 +43,40 @@
   font-weight: 500;
   font-style: italic;
   box-sizing: border-box;
-
 }
 .card2:hover{
   transform: scale(1.1);
   box-shadow: 0 8px 16px #41b3a3 ;
 
-}
-.card3:hover{
+}.card3:hover{
   transform: scale(1.1);
   box-shadow: 0 8px 16px #F98866 ;
 
-}
-.card1:hover{
+}.card1:hover{
   transform: scale(1.1);
   box-shadow: 0 8px 16px #bd9dea ;
 
-}
-.card4:hover{
+}.card4:hover{
   transform: scale(1.1);
   box-shadow: 0 8px 16px #e47e98 ;
 
-}
-.card5:hover{
+}.card5:hover{
   transform: scale(1.1);
   box-shadow: 0 8px 16px #f2c76e ;
 
 }
-
-
 .left {
   position: sticky;
   left: 0;
   transform: translateY(-50%);
   margin-right: 30px;
 }
-
 .right {
   position: sticky;
   right: 0;
   transform: translateY(-50%);
   margin-left: 30px;
 }
-
 .scroll-images {
   position: relative;
   width: 100%;
@@ -98,7 +89,6 @@
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
-
 .child {
   display: flex;
   justify-content: center;
@@ -110,11 +100,6 @@
   -webkit-box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);;
   box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);;
 }
-
-
-
-
-
 button {
   background-color: transparent;
   border: none;
@@ -124,8 +109,4 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.section {
-background-attachment: fixed;
-  background-image: linear-gradient(67.5deg, rgb(215, 215, 215) 0%, rgb(215, 215, 215) 46%,rgb(198, 198, 198) 46%, rgb(198, 198, 198) 49%,rgb(181, 181, 181) 49%, rgb(181, 181, 181) 56%,rgb(164, 164, 164) 56%, rgb(164, 164, 164) 61%,rgb(146, 146, 146) 61%, rgb(146, 146, 146) 75%,rgb(129, 129, 129) 75%, rgb(129, 129, 129) 84%,rgb(112, 112, 112) 84%, rgb(112, 112, 112) 100%),linear-gradient(22.5deg, rgb(215, 215, 215) 0%, rgb(215, 215, 215) 46%,rgb(198, 198, 198) 46%, rgb(198, 198, 198) 49%,rgb(181, 181, 181) 49%, rgb(181, 181, 181) 56%,rgb(164, 164, 164) 56%, rgb(164, 164, 164) 61%,rgb(146, 146, 146) 61%, rgb(146, 146, 146) 75%,rgb(129, 129, 129) 75%, rgb(129, 129, 129) 84%,rgb(112, 112, 112) 84%, rgb(112, 112, 112) 100%),linear-gradient(112.5deg, rgb(215, 215, 215) 0%, rgb(215, 215, 215) 46%,rgb(198, 198, 198) 46%, rgb(198, 198, 198) 49%,rgb(181, 181, 181) 49%, rgb(181, 181, 181) 56%,rgb(164, 164, 164) 56%, rgb(164, 164, 164) 61%,rgb(146, 146, 146) 61%, rgb(146, 146, 146) 75%,rgb(129, 129, 129) 75%, rgb(129, 129, 129) 84%,rgb(112, 112, 112) 84%, rgb(112, 112, 112) 100%),linear-gradient(90deg, rgb(231, 231, 231),rgb(195, 195, 195)); background-blend-mode:overlay,overlay,overlay,normal;
 }
