@@ -21,4 +21,8 @@ export class HomeComponent implements OnInit {
     typed.reset(true)
   }
 
+  downloadPdf() {
+    const pdfPath = 'https://drive.google.com/file/d/1PX9KfCYFqIjOCl9H8UK5dmDHyEzOhhja/view?usp=drive_link';
+    window.open(pdfPath, '_blank');
+  }
 }
