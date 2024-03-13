@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   }
 
 downloadPdf() {
-  const pdfPath = 'https://drive.google.com/file/d/19kxeRVWAhBo20r9Hll8j2dKwS2TP-CLQ/view?usp=drive_link';
+  const pdfPath = 'https://drive.google.com/file/d/1Xm7nBAGorj-oX7obogsl2ltFqQfxaY6C/view?usp=drive_link';
   window.open(pdfPath, '_blank');
 }
 }
